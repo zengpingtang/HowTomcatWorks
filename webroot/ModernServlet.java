@@ -15,6 +15,13 @@ public class ModernServlet extends HttpServlet {
     
     response.setContentType("text/html");
     PrintWriter out = response.getWriter();
+    out.println("HTTP/1.1 200 OK");
+    out.println("Server: Microsoft-IIS/4.0");
+    out.println("Date: Mon, 5 Jan 2004 13:13:33 GMT");
+    out.println("Content-Type: text/html");
+    out.println("Last-Modified: Mon, 5 Jan 2004 13:13:12 GMT");
+    out.println("Content-Length: 1025");
+    out.println();
     out.println("<html>");
     out.println("<head>");
     out.println("<title>Modern Servlet</title>");

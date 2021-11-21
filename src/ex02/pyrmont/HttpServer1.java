@@ -1,5 +1,7 @@
 package ex02.pyrmont;
 
+import ex01.pyrmont.HttpServer;
+
 import java.net.Socket;
 import java.net.ServerSocket;
 import java.net.InetAddress;
@@ -22,8 +24,11 @@ public class HttpServer1 {
   private boolean shutdown = false;
 
   public static void main(String[] args) {
+    System.out.println("web server starting");
     HttpServer1 server = new HttpServer1();
+    System.out.println("web server started");
     server.await();
+    System.out.println("web server stopped");
   }
 
   public void await() {
